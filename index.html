@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sultan</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="logo"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/625px-Apple_logo_black.svg.png"
+          width="30px"
+          height="35px"
+          alt="Logo"
+      /></a>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="#products-section">Product</a>
+        <a href="#transaction-section">Transaksi</a>
+        <a href="#founder-section">Profile</a>
+      </div>
+    </div>
+
+    <div class="header" id="header">
+      <h1>Welcome to Sultan Store</h1>
+    </div>
+
+    <div class="products-section" id="products-section">
+      <h2>Our Products</h2>
+      <div class="product-cards">
+        <div class="card">
+          <img
+            src="https://m.media-amazon.com/images/I/51gcDZGUXbL._AC_UF1000,1000_QL80_.jpg"
+            alt="Product 1"
+          />
+          <h3>Iphone 14</h3>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.fonearena.com/blog/wp-content/uploads/2020/04/iPhone-SE2.jpg"
+            alt="Product 2"
+          />
+          <h3>Iphone SE</h3>
+        </div>
+        <div class="card">
+          <img
+            src="https://images.unsplash.com/photo-1709178295038-acbeec786fcf?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Product 3"
+          />
+          <h3>Iphone 15 Promax</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-section">
+      <div class="about-content">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1585184394271-4c0a47dc59c9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Store Image"
+          />
+        </div>
+        <div class="about-text">
+          <h2>About Sultan Store</h2>
+          <p>
+            Sultan Store adalah toko yang menyediakan berbagai produk
+            berkualitas tinggi dengan harga terbaik. Kami berkomitmen untuk
+            memberikan layanan terbaik kepada pelanggan kami dengan menyediakan
+            produk terbaru dan terpopuler di pasar.
+          </p>
+          <p>
+            Kami memiliki berbagai macam produk elektronik, yang semuanya
+            dipilih dengan cermat untuk memastikan kualitas dan kepuasan
+            pelanggan. Kunjungi toko kami dan temukan produk favorit Anda hari
+            ini!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="transaction-section" id="transaction-section">
+      <h2>Transaksi</h2>
+      <form
+        name="transactionForm"
+        class="transaction-form"
+        onsubmit="simpan(event)"
+      >
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="product">Barang:</label>
+        <select id="product" name="product" required>
+          <option value="">Pilih Barang</option>
+          <option value="Iphone 14">Iphone 14</option>
+          <option value="Iphone SE">Iphone SE</option>
+          <option value="Iphone 15 Promax">Iphone 15 Promax</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <table border="1" id="hasil">
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Barang</th>
+        </tr>
+      </table>
+    </div>
+
+    <div class="founder-section" id="founder-section">
+      <h2>About the Founder</h2>
+      <div class="founder-content">
+        <div class="founder-image">
+          <img src="pp.jpg" alt="Founder Image" />
+        </div>
+        <div class="founder-text">
+          <h3>Muhammad Sultan - 10523007 - IS 1</h3>
+          <p>
+            Saya adalah pendiri dari Sultan Store. Dengan pengalaman
+            bertahun-tahun dalam industri ini, saya berkomitmen untuk
+            menyediakan produk berkualitas terbaik dengan harga yang terjangkau.
+            Kami selalu berusaha untuk memberikan pelayanan terbaik kepada
+            pelanggan kami.
+          </p>
+          <p>
+            Saya percaya bahwa kualitas produk dan pelayanan yang baik adalah
+            kunci keberhasilan dalam bisnis ini. Terima kasih telah mempercayai
+            Sultan Store untuk kebutuhan Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Sultan Store. All Rights Reserved.</p>
+      <p>Follow us on:</p>
+      <div class="social-icons">
+        <a href="#"><img src="URL_ICON_FACEBOOK" alt="Facebook" /></a>
+        <a href="#"><img src="URL_ICON_TWITTER" alt="Twitter" /></a>
+        <a href="#"><img src="URL_ICON_INSTAGRAM" alt="Instagram" /></a>
+      </div>
+    </div>
+
+    <script>
+      var data = [];
+      var i = 0;
+
+      function simpan(event) {
+        event.preventDefault();
+        var form = document.forms["transactionForm"];
+        var nama = form["name"].value;
+        var email = form["email"].value;
+        var barang = form["product"].value;
+
+        data[i] = { nama: nama, email: email, barang: barang };
+        form.reset();
+        i++;
+        tampil();
+      }
+
+      function tampil() {
+        var isi = "<tr><th>Nama</th><th>Email</th><th>Barang</th></tr>";
+        for (var j = 0; j < data.length; j++) {
+          isi +=
+            "<tr><td>" +
+            data[j].nama +
+            "</td><td>" +
+            data[j].email +
+            "</td><td>" +
+            data[j].barang +
+            "</td></tr>";
+        }
+        document.getElementById("hasil").innerHTML = isi;
+      }
+    </script>
+  </body>
+</html>
